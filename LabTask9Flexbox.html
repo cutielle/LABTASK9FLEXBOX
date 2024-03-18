@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LabTask9Flexbox</title>
+
+        <style>
+            html, body {
+                width: 800px;
+                margin: 0 auto;
+                padding: 25px;
+                align-items: center;
+                justify-content: center;
+            }
+            body {
+                background-color: #303030;
+            }
+            hr {
+                border: none;
+                border-radius: 30%;
+                height: 3px;
+                background-color: #B8828E;
+                margin: 20px 0;
+            }
+
+            .FlexContainer1, .FlexContainer2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .C1-item1{
+                background-color: #B6D7E3;
+                width: 200px;
+            }
+            .C1-item2{
+                background-color:#F4B9C0;
+                width: 75px;
+            }
+
+            .C2-item1, .C2-item3{
+                background-color: #B6D7E3;
+                width: 50px;
+            }
+            .C2-item2{
+                background-color:#F4B9C0;
+                flex:1;
+            }
+
+            .FlexContainer3{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: white;
+            }
+            .C3-item1, .C3-item2, .C3-item3, .C3-item4{
+                background-color: #F4B9C0;
+                width: 50px;
+            }
+
+            .FlexContainer4{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: white;
+                border: gray 3px solid;
+                height: 50px;
+            }
+            .C4-item1, .C4-item2{
+                background-color: #F4B9C0;
+                width: 50px;
+            }
+
+            p{
+                color: #B8828E;
+                font-weight: bold;
+                font-size: 20px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            .Challenge1{
+                display: flex;
+                border-radius: 10px;
+                justify-content: space-around;
+                align-items: center;
+                background-color: #B8828E;
+                height: 50px;
+            }
+
+            .home{
+                border: none;
+                background-color: transparent;
+                color: white;
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                cursor: pointer;
+            }
+            .home:hover{
+                transform: scale(1.1);
+                transition: all ease-in-out .3s;
+                box-shadow: 10% #303030;
+                color: #303030;
+                font-weight: bold;
+            }
+
+            .SearchBar{
+                width: 400px;
+                height: 10px;
+                border-radius: 20px;
+                border: none;
+                padding: 10px;
+                background-color: white;
+                font-size: 10px;
+            }
+
+            .BtDl{
+                background-color: transparent;
+                color: white;
+                border: white 1px solid;
+                padding: 10px;
+                font-size: auto;
+                text-align: center;
+                text-justify: auto;
+                cursor: pointer;
+            }
+            .BtDl:hover{
+                transform: scale(1.1);
+                transition: all ease-in-out .3s;
+                box-shadow: 10% #303030;
+                background-color: #303030;
+                color: #B8828E;
+            }
+
+            .Challenge2{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #B8828E;
+                height: 150px;
+                width: 400px;
+                padding: 5px;
+                border-radius: 20px;
+            }
+
+            .option{
+                height: 30px;
+                width: 300px;
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                padding: 5px;
+            }
+            .option:hover{
+                transform: scale(1.1);
+                transition: all ease-in-out .3s;
+                box-shadow: 10% #303030;
+                background-color: #303030;
+                color: #B8828E;
+            }
+
+            .C2{
+                border: none;
+                background-color: transparent;
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                cursor: pointer;
+            }
+            .C2:hover{
+                transform: scale(1.1);
+                transition: all ease-in-out .3s;
+                box-shadow: 10% #303030;
+                background-color: #303030;
+                color: #B8828E;
+            }
+
+            .notif{
+                background-color: #303030;
+                color: white;
+                border-radius: 50%;
+                padding: 10px;
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .notif:hover{
+                transform: scale(1.1);
+                transition: all ease-in-out .3s;
+                box-shadow: 10% #303030;
+                background-color: #B8828E;
+                color: #303030;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="FlexContainer1">
+            <div class="C1-item1">C1I1</div>
+            <div class="C1-item2">C1I2</div>
+        </div>
+        <hr>
+
+        <div class="FlexContainer2">
+            <div class="C2-item1">C2I1</div>
+            <div class="C2-item2">C2I2</div>
+            <div class="C2-item3">C2I3</div>
+        </div>
+        <hr>
+
+        <div class="FlexContainer3">
+            <div class="C3-item1">C3I1</div>
+            <div class="C3-item2">C3I2</div>
+            <div class="C3-item3">C3I3</div>
+            <div class="C3-item4">C3I4</div>
+        </div>
+        <hr>
+
+        <div class="FlexContainer4">
+            <div class="C4-item1">C4I1</div>
+            <div class="C4-item2">C4I2</div>
+        </div>
+        <hr>
+
+        <p>Challenge Exercise using Flexbox</p>
+        <div class="Challenge1">
+            <button class="home">Home</button>
+            <input class="SearchBar" type="text" placeholder="Search">
+            <button class="BtDl" type="submit">Download</button>
+        </div>
+        <hr>
+
+        <div class="Challenge2">
+            <div class="option">
+                <button class="C2">Home</button>
+                <div class="notif">14</div>
+            </div>
+            <div class="option">
+                <button class="C2">Notification</button>
+                <div class="notif">3</div>
+            </div>
+            <div class="option">
+                <button class="C2">Messages</button>
+                <div class="notif">5</div>
+            </div>
+        </div>
+    </body>
+</html>
